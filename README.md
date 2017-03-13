@@ -57,8 +57,6 @@ In package.json, replace the scripts object with this:
   },
 ```
 
-Create a directory inside of your root directory named `app`, and another directory inside of `app` named `app/components`.
-
-Create three new files: `app/index.js`, `app/index.html`, and `app/components/App.js`.
+Create a directory inside of your root directory named `app`, and another directories inside of `app` named `app/components` and `app/containers`.
 
 Start writing code ;)
