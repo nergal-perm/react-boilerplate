@@ -60,3 +60,17 @@ In package.json, replace the scripts object with this:
 Create a directory inside of your root directory named `app`, and another directories inside of `app` named `app/components` and `app/containers`.
 
 Start writing code ;)
+
+## Testing with tape
+
+On Windows tests should be run by this command:
+
+```
+tape -r babel-register -r babel-polyfill tests/*.test.js
+```
+
+On Linux it's probably (I didn't test it yet) should be run by 
+
+```
+babel-node ./node_modules/.bin/tape tests/*.test.js | faucet
+```
