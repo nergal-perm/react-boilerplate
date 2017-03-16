@@ -1,4 +1,4 @@
-# THE CONDENSED VERSION
+# React + Redux frontend boilerplate project
 
 Here's a condensed version of how to get a React app up and running:
 
@@ -16,7 +16,7 @@ npm i -D webpack webpack-dev-server html-webpack-plugin
 In your root directory, create a file named `.babelrc`. Write this inside:
 
 ```
-{ presets: ['react'] }
+{ presets: ['es2015', 'react'] }
 ```
 
 In your root directory, create another file named `webpack.config.js`. Write (or copy) this inside:
@@ -69,7 +69,7 @@ On Windows tests should be run by this command:
 tape -r babel-register -r babel-polyfill tests/*.test.js
 ```
 
-On Linux it's probably (I didn't test it yet) should be run by 
+On Linux it's probably (I didn't try it yet) should be run by 
 
 ```
 babel-node ./node_modules/.bin/tape tests/*.test.js | faucet
